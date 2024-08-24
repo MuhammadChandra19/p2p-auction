@@ -1,0 +1,21 @@
+{
+  "name": "p2p-auction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Muhammad Chandra Zulfikar",
+  "license": "ISC",
+  "dependencies": {
+    "@hyperswarm/rpc": "^3.3.2",
+    "compact-encoding": "^2.15.0",
+    "crypto": "^1.0.1",
+    "hyperbee": "^2.20.0",
+    "hypercore": "^10.37.18",
+    "hyperdht": "^6.16.2",
+    "hyperswarm": "^4.8.2"
+  }
+}
