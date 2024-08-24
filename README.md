@@ -25,13 +25,103 @@ Make sure the server is started, and copy the public key to  `auction.js` line 1
 ```
 
 then run `node main.js` in different terminal:
-output:
+seller output:
 ```
 Starting client...
 -------P2P AUCTION-------
 1. Sell an item
 2. Bid on an item
 ----------------------------
-Choose an option: >
+Choose an option: >1
+----- Create the item -----
+Enter item name: nft card
+Enter price (USDt): 10
 
+> 
+ rui makes bid with 14 USDt 
+
+
+ kai makes bid with 40 USDt 
+
+1
+
+```
+
+bid output:
+```
+Starting client...
+-------P2P AUCTION-------
+1. Sell an item
+2. Bid on an item
+----------------------------
+Choose an option: >2
+----- getting room list -----
+-------P2P AUCTION ROOM-------
+------------------------------------
+1. nft card
+
+> 1
+1
+> input your name: rui
+{
+  roomName: 'nft card',
+  price: '10',
+  key: 'db14f5c78b334c8584f49a6565f6afc6fbfc48d9f98c382493688f1efba450cb'
+}
+> Start Bidding on: nft card
+>
+
+  command (bid, menu): bid
+>
+  enter your price: 14
+> Bid placed: 14 
+
+>
+
+  command (bid, menu): 
+ rui makes bid with 14 USDt 
+
+
+ kai makes bid with 40 USDt 
+
+
+ Auction ended, sold to: kai for 40 USDt, type menu to exit
+```
+
+bid output
+```
+Starting client...
+-------P2P AUCTION-------
+1. Sell an item
+2. Bid on an item
+----------------------------
+Choose an option: >2
+----- getting room list -----
+-------P2P AUCTION ROOM-------
+------------------------------------
+1. nft card
+
+Choose auction room number: 1
+1
+> input your name: kai
+{
+  roomName: 'nft card',
+  price: '10',
+  key: 'db14f5c78b334c8584f49a6565f6afc6fbfc48d9f98c382493688f1efba450cb'
+}
+> Start Bidding on: nft card
+>
+
+  command (bid, menu): bid
+>
+  enter your price: 40
+> Bid placed: 40 
+
+>
+
+  command (bid, menu): 
+ kai makes bid with 40 USDt 
+
+
+ Auction ended, sold to: kai for 40 USDt, type menu to exit
 ```
