@@ -10,7 +10,7 @@ const { CLI } = require("./cli")
 class Auction {
 
   constructor() {
-    this.serverPubKey = Buffer.from('c8ecc58fce0bac50dbbe6c4a26b1e2a4f172a6508c18fe8e0be5d0a64ae2728e', 'hex')
+    this.serverPubKey = Buffer.from('4cc04050ce4c31d92bcbbed107c92c2bd360b180ac73aa67829d2f50c323a95f', 'hex')
     this.bidHistory = []
     this.highestBid = {name: '', price: ''}
     this.connectedPairs = {}
